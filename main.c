@@ -31,7 +31,7 @@ int main(int argc, char **argv)
         {
                 token = strtok(buff, "  \t\n");
                 if (token != NULL)
-                        get_func(token, &stack, line_number);
+                       get_func(token, &stack, line_number);
                 line_number++;
         }
         free(buff);
