@@ -33,10 +33,7 @@ void push(stack_t **stack, unsigned int line_number)
                 fprintf(stderr, "Error: malloc failed\n");
                 exit(EXIT_FAILURE);
         }
-        {
-                fprintf(stderr, "Error: malloc failed\n");
-                exit(EXIT_FAILURE);
-        }
+	
         temp->n = atoi(token);
         temp->prev = NULL;
         temp->next = *stack;
