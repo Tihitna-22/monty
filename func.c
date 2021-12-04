@@ -14,6 +14,7 @@ void get_func(char *command, stack_t **stack, unsigned int line_number)
 		{"swap", swap}, {"add", add},
 		{"nop", nop}, {"sub", sub},
 		{"div", div_op}, {"mul", mul_op}, 
+		{"mod", mod},
 		{NULL, NULL}
 	};
 	while (commands[i].opcode != NULL)
